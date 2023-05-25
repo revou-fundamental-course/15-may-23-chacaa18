@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <title>KATIK</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+        <body>
+            <header>
+                <span class="title">KATIK</span>
+                <span class="sub-title">Kalkulator Matematika</span> 
+            </header>
+            <main>
+                <p align="center">Hai Sobat, Selamat datang di Katik :D</p>
+                <p align="center">Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+                <div class="judul-luas">
+                    <h1>Luas Persegi</h1>
+                </div>
+                <img class="gambar-persegi" src="https://cdn0-production-images-kly.akamaized.net/SwhO8YbO6GE-cFtETLBE_nrG2SE=/1280x720/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3409130/original/098589600_1616496130-persegi.jpg">
+                <div class="rumus-luas">
+                    <p>Rumus Luas Persegi yaitu:</p>
+                    <p>L = S X S</p>
+                    <p>Dimana :</p>
+                    <p>L = Luas</p>
+                    <p>S = Sisi</p>
+                </div>
+                <hr>
+                <div class="hitung-luas">
+                    <h1>Hitung Luas Persegi</h1>
+                    <input type="number" id="sisi-luas" name="input" placeholder="Nilai Sisi (luas)" required>
+                    <div id="output_luas"></div>
+                    <br>
+                    <button id="hitung-luas" name="hitung-luas" onclick="hitungLuas()">Hitung</button>
+                    <button id="reset-luas" name="reset-luas" onclick="resetLuas()">Reset</button>
+                </div>
+                <hr>
+                <div class="rumus-keliling">
+                    <div class="judul-keliling"><h1>Keliling Persegi</h1></div>
+                    <img class="gambar-persegi" src="https://cdn0-production-images-kly.akamaized.net/SwhO8YbO6GE-cFtETLBE_nrG2SE=/1280x720/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3409130/original/098589600_1616496130-persegi.jpg">
+                        <p>Rumus Keliling Persegi yaitu :</p>
+                        <p class="formula">K = 4 x S</p>
+                        <p>Di mana :</p>
+                       <p>K = Keliling</p>
+                       <p>S = Sisi</p>
+                    </div>
+                    <hr>
+                    <div class="hitung-keliling">
+                        <h2>Hitung Keliling Persegi</h2>
+                        <input id="sisi-keliling" type="number" name="sisi-keliling" placeholder=" Nilai sisi (keliling)" required>
+                        <div id="output_keliling"></div>
+                        <br>
+                        <button id="hitung-keliling" type="submit" name="hitung-keliling" onclick="hitungKeliling()">Hitung</button>
+                        <button id="reset-keliling" name="reset-keliling" onclick="resetKeliling()">Reset</button>
+                    </div>
+            </main>
+        </body>
+</html>
